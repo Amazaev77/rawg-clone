@@ -1,0 +1,22 @@
+@import "src/theme/color";
+
+.link {
+  display: block;
+  height: 26px;
+  background-color: $white-color;
+  border-radius: 3px;
+  overflow: hidden;
+  padding-right: 8px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  &_darts_img {
+    width: 18px;
+    height: 18px;
+    transform: translateY(8px);
+  }
+  &_text {
+    font-size: 14px;
+    color: $black-color;
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,18 @@
+@import "src/theme/color";
+
+.main {
+  flex: 1;
+  &_title {
+    color: $white-color;
+    margin: 0 0 8px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 74px;
+  }
+  &_subtitle {
+    color: $white-color;
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

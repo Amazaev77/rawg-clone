@@ -1,0 +1,27 @@
+@import "src/theme/color";
+
+.input {
+  background: $grey-inp-background;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 12px 0 38px;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  transition: all 370ms;
+  &::placeholder {
+    color: $light-grey-color;
+  }
+  &:hover::placeholder, &:focus::placeholder {
+    color: #565656;
+  }
+  &:hover, &:focus {
+    background-color: #fff;
+  }
+  @media screen and (max-width: 979px) {
+    height: 28px;
+    max-width: 220px;
+  }
+}

@@ -1,0 +1,52 @@
+@import "src/theme/color";
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  &_item {
+    margin-bottom: 8px;
+    cursor: pointer;
+    opacity: 0.4;
+    &_wrap {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      &:hover &_icon {
+        background-color: $white-color;
+        svg {
+          path {
+            fill: $black-color;
+          }
+        }
+      }
+      &_arrow {
+        &_top {
+          transform: translateY(1px) rotate(-90deg);
+        }
+        &_bottom {
+          transform: translateY(1px) rotate(90deg);
+        }
+      }
+      &_icon {
+        width: 32px;
+        height: 32px;
+        background-color: $light-grey-background;
+        margin-right: 8px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          path {
+            transition: 400ms;
+            fill: $white-color;
+          }
+        }
+      }
+      &_text {
+        font-size: 16px;
+        color: $white-color;
+      }
+    }
+  }
+}

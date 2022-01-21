@@ -1,0 +1,44 @@
+@import "src/theme/color";
+
+.form {
+  position: relative;
+  input:focus + &_svg_icon_search, input:hover + &_svg_icon_search {
+    path {
+      transition: fill 370ms;
+      fill: $black-color;
+    }
+  }
+  &_svg_icon_search {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    pointer-events: none;
+    @media screen and (max-width: 979px) {
+      top: 7px;
+      left: 15px;
+    }
+    path {
+      fill: $light-grey-color;
+    }
+  }
+  &_hotkey {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: $light-grey-color;
+    font-size: 11px;
+    pointer-events: none;
+    &_alt, &_enter {
+      padding: 3px 5px;
+      border: 1px solid #ffffff4d;
+      border-radius: 3px;
+      font-weight: 300;
+      font-family: monospace;
+    }
+    &_plus {
+      margin: 0 4px;
+    }
+  }
+}

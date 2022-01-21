@@ -1,0 +1,104 @@
+@import "src/theme/color";
+
+.wrapper {
+  &_hamburger_btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+  &_menu {
+    overflow: auto;
+    width: 310px;
+    height: calc(100% - 32px);
+    max-height: 708px;
+    border-radius: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: $white-color;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    z-index: 1;
+    &_link {
+      display: block;
+      color: $black-color;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 6px 0 8px;
+    }
+    &_bold_link {
+      padding: 6px 0 8px;
+      margin-bottom: 10px;
+      color: $black-color;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 24px;
+      display: block;
+    }
+    &_top {
+      display: flex;
+      &_links {
+        flex: 2;
+        margin-right: 25px;
+        &_rate_top {
+          margin-bottom: 6px;
+          max-width: 168px;
+        }
+      }
+      &_icons {
+        flex: 1;
+        & div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        &_close {
+          margin: 13px 13px 24px 13px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        &_login, &_signup {
+          text-decoration: none;
+          max-width: 65px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 6px;
+          &_text {
+            color: $dark-color-background;
+            opacity: .4;
+            font-size: 14px;
+            margin-top: 3px;
+          }
+        }
+        &_login_icon, &_signup_icon {
+          width: 48px;
+          height: 48px;
+          line-height: 48px;
+          border-radius: 100%;
+          background-color: $dark-color-background;
+          position: relative;
+          img {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  &_dark_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.82);
+  }
+}

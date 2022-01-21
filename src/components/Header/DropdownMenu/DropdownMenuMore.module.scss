@@ -1,0 +1,8 @@
+@import "src/theme/color";
+
+.dropdown_wrapper {
+  position: relative;
+  &_dotted {
+    margin-top: 7px;
+  }
+}

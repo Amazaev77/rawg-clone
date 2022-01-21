@@ -1,0 +1,39 @@
+@import "src/theme/color";
+
+.dropdown {
+  position: relative;
+  min-width: 150px;
+  display: inline-block;
+  max-width: 215px;
+  &_button {
+    padding: 10px 16px;
+    background-color: $light-grey-background;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &_content {
+      color: $white-color;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: 300ms;
+      &:hover {
+        color: $grey-color;
+      }
+      span {
+        font-weight: 700;
+        margin-left: 4px;
+        margin-right: 8px;
+      }
+
+      &_arrow {
+        width: 13px;
+        height: 13px;
+        transform: translateY(3px) rotate(90deg);
+      }
+    }
+  }
+}

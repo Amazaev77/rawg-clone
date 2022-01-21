@@ -1,0 +1,27 @@
+@import "src/theme/color";
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  background-color: $white-color;
+  padding: 20px 10px;
+  border-radius: 4px;
+  width: 150px;
+  &_item {
+    a {
+      color: $black-color;
+      cursor: pointer;
+      text-decoration: none;
+      margin-bottom: 2px;
+      border-radius: 4px;
+      font-size: 14px;
+      display: block;
+      padding: 4px 10px;
+      transition: 200ms;
+      &:hover {
+        background-color: rgba(215, 215, 215, 0.76);
+      }
+    }
+  }
+}

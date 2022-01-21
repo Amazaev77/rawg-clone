@@ -1,0 +1,38 @@
+@import "src/theme/color";
+
+.list_item {
+  margin-bottom: 8px;
+  &_link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &:hover &_icon {
+      background-color: $white-color;
+      svg {
+        path {
+          fill: $black-color;
+        }
+      }
+    }
+    &_icon {
+      width: 32px;
+      height: 32px;
+      background-color: $light-grey-background;
+      margin-right: 8px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        path {
+          transition: 400ms;
+          fill: $white-color;
+        }
+      }
+    }
+    &_text {
+      font-size: 16px;
+      color: $white-color;
+    }
+  }
+}
